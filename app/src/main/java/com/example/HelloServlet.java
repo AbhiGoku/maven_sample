@@ -22,13 +22,14 @@ public class HelloServlet extends HttpServlet {
         // TODO Auto-generated constructor stub
     }
 
-//	/**
-//	 * @see HttpServlet#service(HttpServletRequest request, HttpServletResponse response)
-//	 */
-//	public void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-//		// TODO Auto-generated method stub
-//		System.out.println("service called");
-//	}
+	/**
+	 * @see HttpServlet#service(HttpServletRequest request, HttpServletResponse response)
+	 */
+	public void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		System.out.println("service called");
+		doGet( request, response);
+	}
 
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
@@ -36,7 +37,7 @@ public class HelloServlet extends HttpServlet {
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		System.out.println("doget called");
-		response.setContentType("text/plain");
+		response.setContentType("text/html;charset=UTF-8");
 		response.getWriter().write("Hello from me to you");
 	}
 
