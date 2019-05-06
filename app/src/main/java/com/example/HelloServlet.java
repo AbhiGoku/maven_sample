@@ -18,7 +18,7 @@ public class HelloServlet extends HttpServlet {
      * @see HttpServlet#HttpServlet()
      */
     public HelloServlet() {
-        super();
+     //   super();
         // TODO Auto-generated constructor stub
     }
 
@@ -27,7 +27,7 @@ public class HelloServlet extends HttpServlet {
 	 */
 	public void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		
+		System.out.println("service called");
 	}
 
 	/**
@@ -35,7 +35,8 @@ public class HelloServlet extends HttpServlet {
 	 */
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		
+		System.out.println("doget called");
+		response.setContentType("text/xml");
 		response.getWriter().write("Hello from servlet");
 	}
 
