@@ -37,7 +37,7 @@ public class HelloServlet extends HttpServlet {
 		// TODO Auto-generated method stub
 		System.out.println("doget called");
 		response.setContentType("text/plain");
-		response.getWriter().write("Hello from servlet");
+		response.getWriter().write("Hello from me to you");
 	}
 
 	/**
