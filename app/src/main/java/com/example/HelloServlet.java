@@ -36,7 +36,7 @@ public class HelloServlet extends HttpServlet {
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		System.out.println("doget called");
-		response.setContentType("text/xml");
+		response.setContentType("text/plain");
 		response.getWriter().write("Hello from servlet");
 	}
 
